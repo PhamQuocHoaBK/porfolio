@@ -1,0 +1,305 @@
+.introduction {
+    padding-left: auto;
+}
+
+.textHello {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.textAm {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+.textName {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #14b8a6;
+    font-weight: bold;
+}
+
+
+@keyframes typing {
+
+    0%,
+    40% {
+        content: "";
+    }
+
+    1%,
+    39% {
+        content: "p";
+    }
+
+    2%,
+    38% {
+        content: "pa";
+    }
+
+    3%,
+    37% {
+        content: "pas";
+    }
+
+    4%,
+    36% {
+        content: "pass";
+    }
+
+    5%,
+    35% {
+        content: "passio";
+    }
+
+    6%,
+    34% {
+        content: "passion";
+    }
+
+    7%,
+    33% {
+        content: "passiona";
+    }
+
+    8%,
+    32% {
+        content: "passionat";
+    }
+
+    9%,
+    31% {
+        content: "passionate";
+    }
+
+    50%,
+    80% {
+        content: "";
+    }
+
+    51%,
+    79% {
+        content: "c";
+    }
+
+    52%,
+    78% {
+        content: "co";
+    }
+
+    53%,
+    77% {
+        content: "com";
+    }
+
+    54%,
+    76% {
+        content: "comm";
+    }
+
+    55%,
+    75% {
+        content: "commi";
+    }
+
+    56%,
+    74% {
+        content: "commit";
+    }
+
+    57%,
+    73% {
+        content: "committ";
+    }
+
+    58%,
+    72% {
+        content: "committe";
+    }
+
+    59%,
+    71% {
+        content: "committed";
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.typewriter {
+    --caret: currentcolor;
+    color: #14b8a6;
+}
+
+.typewriter.special::before {
+    content: "";
+    animation: typing 9s infinite;
+}
+
+.typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+    border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+    .typewriter::after {
+        animation: none;
+    }
+
+    @keyframes sequencePopup {
+
+        0%,
+        100% {
+            content: "developer";
+        }
+
+        25% {
+            content: "writer";
+        }
+
+        50% {
+            content: "reader";
+        }
+
+        75% {
+            content: "human";
+        }
+    }
+
+    .typewriter::before {
+        content: "developer";
+        animation: sequencePopup 9s linear infinite;
+    }
+}
+
+.squareLeft {
+    position: absolute;
+    bottom: 0px;
+    left: 150px;
+    font-size: 100px;
+    color: #14b8a6;
+}
+
+.squareRight {
+    position: absolute;
+    top: 60px;
+    right: 150px;
+    rotate: 180deg;
+    font-size: 100px;
+    color: #14b8a6;
+}
+
+.myCV {
+    border: 2px solid #14b8a6;
+    background-color: white;
+    color: #14b8a6;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.textMyCV {
+    position: absolute;
+    top:0;
+    left:20px;
+}
+
+.arrow {
+    position: absolute;
+    top: 11px;
+    left: 70px;
+
+    border: solid #14b8a6;
+    border-width: 0 2px 2px 0;
+    padding: 2px;
+    transform: rotate(-45deg);
+}
+
+.arrowRec {
+    position: absolute;
+    top: 12.5px;
+    background-color: #14b8a6;
+    height: 2px;
+    width: 8px;
+    left: 75px;
+    opacity: 0;
+}
+
+.myCV:hover .arrow {
+    transition: 0.2s;
+    left: 78px;
+}
+
+.myCV:hover .arrowRec {
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.myCVDark {
+    border: 2px solid #14b8a6;
+    background-color: #1e1e1e;
+}
+
+.frameAvatar {
+    position: relative;
+    width: 80%;
+}
+
+.frameAvatar::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    z-index: -1;
+    border-radius: 6px;
+    border: 3px solid #60f6d3;
+    top: 7%;
+    left: 7%;
+
+    transform: translate(0px, 0px);
+    transition: 0.25s;
+}
+
+.frameAvatar:hover::after {
+    transform: translate(-2%, -2%);
+    transition: 0.25s;
+}
+
+.avatar {
+    position: static;
+    max-width: 100%;
+    border-radius: 6px; 
+}
+
+@media only screen and (max-width: 992px) {
+    .mainHome {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .mainHome {
+        height: 100vh;
+        padding-bottom: 72px;
+    }
+}

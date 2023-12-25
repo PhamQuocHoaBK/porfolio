@@ -1,0 +1,43 @@
+.quickContact {
+    position: fixed;
+    bottom: 0;
+    left: 40px;
+}
+/* .quickContact::after {
+    content: " ";
+    display: block;
+    height: 90px;
+    width: 1px;
+    background-color: black;
+    margin: auto;
+} */
+.quickContactEnd {
+    display: block;
+    height: 90px;
+    width: 1px;
+    background-color: black;
+    margin: auto;
+}
+
+.iconContact {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+.iconContact:hover path {
+    stroke: #5eb8ae;
+}
+
+.iconContact:hover {
+    transform: scale(1.3);
+    transition: .2s;
+}
+
+.iconContactLinkedin:hover svg {
+        fill: #5eb8ae;
+}
+
+.frameIconContact {
+    padding: 12px 0px;
+}
