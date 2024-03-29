@@ -1,7 +1,7 @@
 .titleExp {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5em;
-    color: #a2a8ab;
+    color: black;
     position: relative;
     overflow: hidden;
 }
@@ -18,15 +18,15 @@
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5em;
     font-size: large;
+    color: #31363F
+}
+
+.titleExpDark {
+    color: #a2a8ab;
+}
+
+.normalExpDark {
     color: #94a6ab;
-}
-
-.titleExpLight {
-    color: black;
-}
-
-.normalExpLight {
-    color: #31363F;
 }
 
 .frameTech {
@@ -64,8 +64,8 @@
     fill: #5eb8ae;
 }
 
-.arrowPathLight {
-    fill: black
+.arrowPathDark {
+    fill: #a2a8ab
 }
 
 .arrowTopRight {

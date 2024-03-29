@@ -121,15 +121,15 @@ function aboutLight() {
 }
 
 function expDark() {
-  $(".titleExp").removeClass("titleExpLight");
-  $(".normalExp").removeClass("normalExpLight");
-  $(".arrowPath").removeClass("arrowPathLight");
+  $(".titleExp").addClass("titleExpDark");
+  $(".normalExp").addClass("normalExpDark");
+  $(".arrowPath").addClass("arrowPathDark");
 }
 
 function expLight() {
-  $(".titleExp").addClass("titleExpLight");
-  $(".normalExp").addClass("normalExpLight");
-  $(".arrowPath").addClass("arrowPathLight");
+  $(".titleExp").removeClass("titleExpDark");
+  $(".normalExp").removeClass("normalExpDark");
+  $(".arrowPath").removeClass("arrowPathDark");
 }
 
 function cardSkillDark() {
