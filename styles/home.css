@@ -225,7 +225,7 @@
 
 .arrow {
     position: absolute;
-    top: 11px;
+    top: 10px;
     left: 70px;
     border: solid #14b8a6;
     border-width: 0 2px 2px 0;
@@ -235,7 +235,7 @@
 
 .arrowRec {
     position: absolute;
-    top: 12.5px;
+    top: 12px;
     background-color: #14b8a6;
     height: 2px;
     width: 8px;
