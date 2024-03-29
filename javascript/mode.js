@@ -47,6 +47,7 @@ function darkMode() {
   aboutDark();
   cardSkillDark();
   quickContactDark();
+  expDark();
 }
 
 function lightMode() {
@@ -56,13 +57,14 @@ function lightMode() {
   aboutLight();
   cardSkillLight();
   quickContactLight();
+  expLight();
 }
 
-// function actionSlider(positionLeft, text, bgColor) {
-//   $(".slider").animate({ left: positionLeft }, "fast");
-//   $(".slider").text(text);
-//   $(".slider").css("background-color", bgColor);
-// }
+function actionSlider(positionLeft, text, bgColor) {
+  $(".slider").animate({ left: positionLeft }, "fast");
+  $(".slider").text(text);
+  $(".slider").css("background-color", bgColor);
+}
 
 function actionModeModal(text, urlLogo, bgColor) {
   $(".textMode").text(text);
@@ -71,7 +73,7 @@ function actionModeModal(text, urlLogo, bgColor) {
 }
 
 function headerDark() {
-  // actionSlider("23px", "LIGHT", "#111827");
+  actionSlider("23px", "LIGHT", "#111827");
   $(".slider").addClass("sliderDark");
   $(".slider").text("LIGHT");
   $(".bgNav").removeClass("bgNavLight");
@@ -80,7 +82,7 @@ function headerDark() {
 }
 
 function headerLight() {
-  // actionSlider("4px", "DARK", "white");
+  actionSlider("4px", "DARK", "white");
   $(".slider").removeClass("sliderDark");
   $(".slider").text("DARK");
   $(".bgNav").removeClass("bgNavDark");
@@ -115,23 +117,55 @@ function aboutDark() {
 }
 
 function aboutLight() {
-  $(".normalAbout").css("color", "black");
+  $(".normalAbout").css("color", "#31363F");
+}
+
+function expDark() {
+  $(".titleExp").removeClass("titleExpLight");
+  $(".normalExp").removeClass("normalExpLight");
+  $(".arrowPath").removeClass("arrowPathLight");
+}
+
+function expLight() {
+  $(".titleExp").addClass("titleExpLight");
+  $(".normalExp").addClass("normalExpLight");
+  $(".arrowPath").addClass("arrowPathLight");
 }
 
 function cardSkillDark() {
-  $(".cardSkill, .cardExp").css("box-shadow", ".2rem .2rem #4b4b4b");
-  $(".cardSkill, .cardExp").css("background-color", "#3c3c3c");
+  // $(".cardSkill, .cardExp").css("box-shadow", ".2rem .2rem #4b4b4b");
+  // $(".cardSkill, .cardExp").css("background-color", "#3c3c3c");
   // box-shadow: 0 .5rem 1rem #4b4b4b;
 }
 
 function quickContactDark() {
   $(".svgContact").css("stroke", "#94a6ab");
   $(".quickContactEnd").css("background-color", "#94a6ab");
+  $(".quickEmailStart").css("background-color", "#94a6ab");
+  $(".email").css("color", "#94a6ab");
+  $(".email").hover(
+    function () {
+      $(this).css("color", "#14b8a6");
+    },
+    function () {
+      $(this).css("color", "#94a6ab");
+    }
+  );
 }
 
 function quickContactLight() {
   $(".svgContact").css("stroke", "black");
   $(".quickContactEnd").css("background-color", "black");
+  $(".quickEmailStart").css("background-color", "black");
+  $(".email").css("color", "black");
+  $(".email").hover(
+    function () {
+      $(this).css("color", "#14b8a6");
+    },
+    function () {
+      $(this).css("color", "");
+    }
+  );
 }
 
 function cardSkillLight() {

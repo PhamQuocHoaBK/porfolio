@@ -1,0 +1,81 @@
+.titleExp {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5em;
+    color: #a2a8ab;
+    position: relative;
+    overflow: hidden;
+}
+
+.timeExp {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2em;
+    color: #6b7e84;
+    transition: color 0.3s ease;
+}
+
+
+.normalExp {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5em;
+    font-size: large;
+    color: #94a6ab;
+}
+
+.titleExpLight {
+    color: black;
+}
+
+.normalExpLight {
+    color: #31363F;
+}
+
+.frameTech {
+    background-color: #2dd4bf1A;
+    color: #5eb8ae;
+    font-size: smaller;
+    border-radius: 12px;
+    padding: 4px 8px;
+    width: auto;
+}
+
+.frameExp {
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    padding: 10px 0px;
+}
+
+.frameExp:hover {
+    background-color: #94a3b81A;
+    padding-left: 10px;
+    transition: padding-left 0.3s ease;
+}
+
+.frameExp:hover .titleExp {
+    color: #5eb8ae
+}
+
+.frameExp:hover .titleExpDark {
+    color: #5eb8ae
+}
+
+.frameExp:hover .arrowPath {
+    fill: #5eb8ae;
+}
+
+.arrowPathLight {
+    fill: black
+}
+
+.arrowTopRight {
+    position: absolute;
+    bottom: 0px;
+    margin-left: 0px;
+    transition: bottom 0.3s ease, margin-left 0.3s ease;
+}
+
+.frameExp:hover .arrowTopRight {
+    bottom: 3px;
+    margin-left: 3px
+}

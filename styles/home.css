@@ -219,15 +219,14 @@
 
 .textMyCV {
     position: absolute;
-    top:0;
-    left:20px;
+    top: 0;
+    left: 20px;
 }
 
 .arrow {
     position: absolute;
     top: 11px;
     left: 70px;
-
     border: solid #14b8a6;
     border-width: 0 2px 2px 0;
     padding: 2px;
@@ -288,12 +287,19 @@
 .avatar {
     position: static;
     max-width: 100%;
-    border-radius: 6px; 
+    border-radius: 6px;
+}
+
+/* @media only screen and (max-width: 992px) {
+    .mainHome {
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 992px) {
     .mainHome {
         height: auto;
+        padding-bottom: 40px;
     }
 }
 
@@ -302,4 +308,4 @@
         height: 100vh;
         padding-bottom: 72px;
     }
-}
+} */

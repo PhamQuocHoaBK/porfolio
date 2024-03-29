@@ -3,6 +3,7 @@
     bottom: 0;
     left: 40px;
 }
+
 /* .quickContact::after {
     content: " ";
     display: block;
@@ -35,7 +36,7 @@
 }
 
 .iconContactLinkedin:hover svg {
-        fill: #5eb8ae;
+    fill: #5eb8ae;
 }
 
 .frameIconContact {

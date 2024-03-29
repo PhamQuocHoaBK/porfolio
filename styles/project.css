@@ -1,0 +1,27 @@
+.imgProject {
+    width: 100%;
+    height: auto;
+}
+
+.titleProject {
+    color: #5eb8ae;
+}
+
+.frameStore {
+    color: #6b7e84;
+    font-size: smaller;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #6b7e84;
+    border-style: solid;
+    padding: 2px 8px;
+    width: auto;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.frameStore:hover {
+    border-color: #5eb8ae;
+    color: #5eb8ae
+}
