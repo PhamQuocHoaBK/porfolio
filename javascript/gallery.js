@@ -20,14 +20,16 @@ $(document).ready(() => {
             "./image/Camxu8.png",
           ]
         : [
-            "./image/Camxu2.png",
-            "./image/Camxu1.png",
-            "./image/Camxu3.png",
-            "./image/Camxu4.png",
-            "./image/Camxu5.png",
-            "./image/Camxu6.png",
-            "./image/Camxu7.png",
-            "./image/Camxu8.png",
+            "./image/ZNail1.png",
+            "./image/ZNail2.png",
+            "./image/ZNail3.png",
+            "./image/ZNail4.png",
+            "./image/ZNail5.png",
+            "./image/ZNail6.png",
+            "./image/ZNail7.png",
+            "./image/ZNail8.png",
+            "./image/ZNail9.png",
+            "./image/ZNail10.png",
           ];
     $(".modal-content").prepend('<div class="listImg"></div>');
     dataSlider.forEach((item, index) =>
