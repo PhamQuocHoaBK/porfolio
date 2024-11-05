@@ -1,0 +1,7 @@
+.goToTop {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  display: none;
+}
