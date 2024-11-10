@@ -1,6 +1,6 @@
 $(document).ready(() => {
   let lastScrollTop = 0,
-    delta = 15;
+    delta = 50;
   $(window).scroll(function (event) {
     var st = $(this).scrollTop();
     if (Math.abs(lastScrollTop - st) <= delta) return;

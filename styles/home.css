@@ -285,22 +285,6 @@
   border-radius: 6px;
 }
 
-/* @media only screen and (max-width: 992px) {
-    .mainHome {
-        height: auto;
-    }
+.txtHighlight {
+  color: #5eb8ae;
 }
-
-@media only screen and (max-width: 992px) {
-    .mainHome {
-        height: auto;
-        padding-bottom: 40px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .mainHome {
-        height: 100vh;
-        padding-bottom: 72px;
-    }
-} */
